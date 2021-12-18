@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Corinthia:wght@700&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Color Guessing Game</title>
+  </head>
+  <body>
+    <h1>
+      Guess the Color!<br />
+      <span id="rgbSpan">R G B(248, 91, 281)</span>
+    </h1>
+
+    <div class="strip">
+      <hr />
+
+      <button onclick="newColor()" id="playAgain">New Colors</button>
+      <span id="caption">Let's Play!</span>
+      <button onclick="easyChange()" id="easybtn">Easy</button>
+      <button onclick="hardChange()" id="hardbtn">Hard</button>
+
+      <hr />
+    </div>
+    <div class="mainbox">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
